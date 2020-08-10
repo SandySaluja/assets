@@ -1,0 +1,18 @@
+
+.seperate button:hover
+{
+  text-decoration: none;
+  color: red;
+  text-color: white;
+}
+.seperate button
+{
+  border-radius: 5px;
+}
+.layout .panel
+{
+  border: solid 1px blue;
+    margin:5px;
+    padding:5px;
+border-radius:2px;
+}
