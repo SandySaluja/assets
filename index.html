@@ -2,8 +2,24 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet.css" type="text/css" href="style.css"/>
 <style>
+  .seperate button:hover
+{
+  text-decoration: none;
+  color: red;
+  text-color: white;
+}
+.seperate button
+{
+  border-radius: 5px;
+}
+.layout .panel
+{
+  border: solid 1px blue;
+    margin:5px;
+    padding:5px;
+border-radius:2px;
+}
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -77,13 +93,35 @@ body {
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-<script scr="script.js">
+<script>
 function openNav() {
   document.getElementById("myNav").style.display = "block";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.display = "none";
+  var ab;
+function errorTest()
+{
+try
+  {
+    ab= NAN;
+    console.log(ab);
+  }
+catch(e)
+  {
+    alert("The value of ab is " +e.description);
+    ab=10;
+  }
+  console.log(ab);
+}
+var ab=100;
+function clickFunction(){
+  document.getElementById('test').innerHTML=ab;
+  console.log(ab);
+  ab++;
+}
+
 }
 </script>
     </div>
@@ -102,7 +140,9 @@ function closeNav() {
    
  
     <div class="panel">
-      <div class="header">  </div>
+      <div class="header"> 
+        <h1> JS While </h1>
+      </div>
       <div class="body">
       <button onclick="clickFunction()"> click me </button>
 <p id='test'>
