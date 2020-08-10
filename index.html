@@ -1,134 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Sarandeep Singh | Frontend Web Developer </title>
-	<meta charset="utf-8">
-	<meta name='viewport' content='width=device-width initial-scale=1 shrink-to-fit=no'>
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/jpg"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
 </head>
 <body>
-	<nav>
-		<ul>
-			    <li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#project">Projects</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#achievement">Achievements</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<div>
-				 <button type="button" class="button">
-				 <span ><a href="https://github.com/SandySaluja/Resume/blob/master/SarandeepSingh_Resume.pdf">MY Resume</a>
-				 </span>
-				 </button>
-			</div>
-	</nav>
-		<section>
-		<div class="home" id="home">
-			<img src="assets/img/profile.jpg">
-			<div class="inner">
-				
-			<h1> Sarandeep Singh </h1>
-			<h3> Frontend Web Developer </h3>
-		</div>
-		</div>
-		<div class="about" id="about">
-		<div class="inner">
-			<h1> About </h1>
-			<h2> Hey! There</h2>
-			<p> 
-				I am 18 years old pursuing my Bachelors degree in Information Technology, familiar with hands on skills to develop and design website also working on gaining more skills and Industrial exposure.I work on Portfolios with HTML5, CSS3, JS. I am good at learning new skills and technologies faster and relate it in real world. I am a gaming freak!
-			</p>
-		</div>
-		</div>
-		<div class="education" id="education">
-			<h1> Education </h1>
-			<div class="inner">
-			<div class="schooling">
-				<img src="">
-				<h2> High-School: St. Thomas College </h2>
-				<h3> Percentage: 87% </h3>
-			</div>
-			<div>
-				<h2> Intermediate: St. Thomas College </h2>
-				<h3> Percentage: 81.75% </h3>
-			</div>
-			<div>
-				<div>
-				<h2> Graduation: Jaypee University of Information Technology </h2>
-				<h3> Trade: Information Technology </h3>
-				<h4> C.G.P.A: 8.2 </h4>
-			</div>
-		</div>
-	</div>
-     </div>
-			<div class="project" id="project">
-				<h1>Projects</h1>
-				<div class="Project">
-				<img src="assets/img/project.png">			
-				<ul>
-					<li>Calculator</li>
-                    <a href="https://sandysaluja.github.io/Calculator/">
-                    My Calculator
-                    </a>
-				</ul>
-			</div>
-		</div>
-	<div class="skills" id="skills">
-				<h1> Skills </h1>
-		<div class="inner">
-			<div>
-				<ul>
-					<li>HTML</li>
-					<li>Javascript</li>
-					<li>CSS</li>
-					<li>Java</li>
-				</ul>
-			</div>
-				<div>
-					<ul>
-					<li>C</li>
-					<li>Volunteership</li>
-					<li>GitHub</li>
-					<li>Command Line</li>
-				</ul>
-			   </div>
-		 </div>
-	</div>
-		    <div class="achievement" id="achievement">
-<!--Achievement block-->
-            <h1> ACHIEVEMENTS: </h1>
-            <div class="inner">
-            <h2> MY Cetrificates</h2>
-            <img src="assets/img/NEOCerificate.jpg">
-            <img src="assets/img/Volunteering.jpg">
-            <img src="assets/img/week.jpg">
-            <img src="assets/img/Git.jpg">
-		    </div>
-		</div>
-		
-			<div class="footer" id="contact">
-				<h1> Get In Touch </h1>
-			<div class="inner">
-				<p>
-					<h3> Address: 93/1, Chander Nagar,<br></h3> 
-					     Alambagh,<br>
-					     Lucknow-226005<br>
-					<h3> Email- </h3> sandysaluja7@ieee.org<br>
-					<h3> GitHub-Profile: </h3> <a href="https://github.com/SandySaluja">Github_Profile</a><br>
-					<h3> OtherPortfolio:</h3> <a href="https://www.linkedin.com/in/sarandeep-singh-03a6351a0/">LinkedIn</a><br>
-					<h3> Contact-No: </h3> +91 8931053015<br>
-				</p>
-			</div>
-                <a href="https://www.facebook.com/sarandeep.singh.7311" class="fa fa-facebook"></a>
-            </div>
-        </section>
-			<script type="text/javascript" href="script.js">
-    	
-    </script>
-		
+<div class="layout">
+  <div class="panel">
+    <div class="header">
+        <h2>Fullscreen Overlay Nav Example</h2>
+        Click on the element below to open the fullscreen overlay navigation menu. 
+    </div>
+    <div class="body">
+      <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+    </div>
+  </div>
+  
+ <div class="panel">
+  <div class="header"> 
+    <h1>ERROR HANDLING</h1>
+   </div>
+    <div class="body"> 
+      <div class="seperate">
+     <button onclick=errorTest()> Error Text          </button>
+      </div>
+    </div>
+ </div>
+   
+ 
+    <div class="panel">
+      <div class="header">  </div>
+      <div class="body">
+      <button onclick="clickFunction()"> click me </button>
+<p id='test'>
+    
+  
+</p>
+<button onclick="clickFunction()"> click me </button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
